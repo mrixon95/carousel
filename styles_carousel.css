@@ -1,0 +1,58 @@
+.container {
+    max-width: 500px;
+    position: relative;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#myImg {
+    position: absolute;
+    background-image: url("images/cinema.jpg");
+}
+
+#left_button {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    top: 50%;
+    left: 10%;
+    cursor: pointer;
+}
+
+#right_button {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    top: 50%;
+    left: 85%;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.actions {
+    margin-right: 20px;
+}
+
+
+@keyframes fadeVisibility {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+
+.carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 5s;
+}
+
+.carousel-item-hidden {
+    display: none;
+}
